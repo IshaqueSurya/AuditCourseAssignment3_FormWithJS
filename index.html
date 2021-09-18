@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Form</h1>
+    <form class="form-container" onsubmit="return validateForm()" method="POST">
+        <input class="form-element textbox" type="text" id="fname" placeholder="Enter Your First Name">
+        <input class="form-element textbox" type="text" id="lname" placeholder="Enter Your Last Name">
+        <input class="form-element textbox" type="text" id="phoneno" placeholder="Enter Your Phone Number">
+        <input class="form-element textbox" type="text" id="email" placeholder="Enter Your Email ID">
+        <input class="form-element textbox" type="password" id="pass" placeholder="Enter Your Password">
+        <input class="form-element textbox" type="password" id="confirmpass" placeholder="Confirm Password">
+        <label class="form-element textbox check">
+            <input type="checkbox" name="newsletter" id="newsletter" >&nbsp&nbspSubscribe to Our Newsletter
+        </label>
+        <label class="form-element">Select Your Favourite Sport:
+            <select class="dropdown" name="sport" id="sport">
+                <option value="">Select a Sport</option>
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+                <option value="Hockey">Hockey</option>
+            </select>
+        </label>
+
+        <label class="form-element">Which Programming Language Do You Love The Most?</label>
+        <div class="radio">
+            <label class="form-element">
+                <input type="radio" name="language"  value="Java">&nbspJava
+            </label>
+
+            <label class="form-element">
+                <input type="radio" name="language"  value="Python">&nbspPython
+            </label>
+
+            <label class="form-element">
+                <input type="radio" name="language"  value="C++">&nbspC++
+            </label>
+        </div>
+        <input type="submit" class="form-element submit">
+
+
+    </form>
+</body>
+
+</html>
